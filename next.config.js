@@ -1,9 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
   images: {
-    domains: ["bkdelivery.co.id"],
+    remotePatterns: [
+      {
+        hostname: "media-order.bkdelivery.co.id",
+      },
+      {
+        hostname: "bkdelivery.co.id",
+      },
+    ],
+  },
+  experimental: {
+    serverActions: true,
   },
 }
 
