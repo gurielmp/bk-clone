@@ -18,7 +18,7 @@ export default function CardBox({}) {
       imageSrc:
         "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/3/16/f8b2q8v78kxbkjxw8cvbbn_product_list.jpg",
       alt: "menu",
-      title: "Cheeseburger Favorite",
+      title: "Gold Collection",
     },
     {
       imageSrc:
@@ -30,7 +30,7 @@ export default function CardBox({}) {
       imageSrc:
         "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/11/2/ahjlc47bb9hstuc3cc9en2_product_list.jpg",
       alt: "menu",
-      title: "Cheeseburger Favorite",
+      title: "Cheese Burger Favorite",
     },
     {
       imageSrc:
@@ -50,6 +50,42 @@ export default function CardBox({}) {
       alt: "menu",
       title: "BK APP EXCLUSIVE",
     },
+    {
+      imageSrc:
+        "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/3/15/syhbxldehjxkumhbs5yiz9_product_list.jpg",
+      alt: "menu",
+      title: "Kids Meal",
+    },
+    {
+      imageSrc:
+        "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/10/10/fkj8wesyvwhxvwfs4um9mt_product_list.jpg",
+      alt: "menu",
+      title: "Side & Dessert",
+    },
+    {
+      imageSrc:
+        "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/3/15/5s3jdve3uve4itsndqnqkm_product_list.jpg",
+      alt: "menu",
+      title: "BEVERAGES",
+    },
+    {
+      imageSrc:
+        "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/2/8/cckufhpxcf4vaj2yupoouv_product_list.jpg",
+      alt: "menu",
+      title: "KING DEALS",
+    },
+    {
+      imageSrc:
+        "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/10/2/zemzufs9bgvx59u8rzxcyz_product_list.jpg",
+      alt: "menu",
+      title: "November Hemat",
+    },
+    {
+      imageSrc:
+        "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/7/31/eqd9boqisvqpdifbcrjo7f_product_list.jpg",
+      alt: "menu",
+      title: "Double Mantul",
+    },
   ]
 
   return (
@@ -59,7 +95,10 @@ export default function CardBox({}) {
       </h3>
       <div className="grid grid-cols-2 lg:grid-cols-3">
         {cards.map((card, index) => (
-          <div key={index} className="card shadow-xl rounded-xl m-2 bg-white">
+          <div
+            key={index}
+            className="card p-2 shadow-xl rounded-xl m-2 bg-white"
+          >
             <div className="card-body p-0">
               <Image
                 className="w-full rounded-t-xl"
@@ -68,9 +107,14 @@ export default function CardBox({}) {
                 width={600}
                 height={600}
               />
-              <h2 className="card-title px-4 pt-3 pb-7 text-[#8b542f] font-bold">
-                {card.title}
-              </h2>
+              <div className="grid lg:grid-cols-2 gap-2 px-4 pt-3 pb-7 justify-center text-center lg:justify-normal lg:text-left">
+                <h2 className="card-title text-[#8b542f] font-bold">
+                  {card.title}
+                </h2>
+                <button className="hidden lg:block btn normal-case font-bold bg-[#ed7801] border-none text-white">
+                  Order
+                </button>
+              </div>
             </div>
           </div>
         ))}

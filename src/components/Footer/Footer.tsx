@@ -26,7 +26,7 @@ export default function Footer() {
             guestservice@burgerking.co.id
           </div>
         </div>
-        <nav className="md:place-self-center md:justify-self-end">
+        <nav className="md:place-self-center md:justify-self-center">
           <div className="grid grid-flow-col gap-4">
             <a>
               <svg
