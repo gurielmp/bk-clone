@@ -5,9 +5,9 @@ import Image from "next/image"
 export default function Home() {
   return (
     <>
-      <div className="bg-[url('https://bkdelivery.co.id/static/website/img/BK_bg.jpg?5218847fa211')] flex flex-col w-full  bg-fixed bg-no-repeat">
+      <div className=" flex flex-col w-full">
         <Carousel />
-        <div className="p-4">
+        <div className="p-4 lg:hidden">
           <div className="flex bg-white border rounded-lg p-4">
             <h3 className="flex font-semibold text-black w-4/5">
               Get exclusive benefits now as a BK Member!{" "}
