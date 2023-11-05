@@ -13,7 +13,7 @@ export default function Carousel() {
 
   return (
     <>
-      <div className="carousel w-full">
+      <div className="carousel min-h-[180px] xl:min-h-[450px] lg:min-h-[400px] sm:min-h-[250px] md:min-h-[300px] max-h-full">
         {imageUrls.map((url, index) => (
           <div
             key={`item${index + 1}`}

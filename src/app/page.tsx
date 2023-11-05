@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function Home() {
   return (
     <>
-      <div className="bg-[url('https://bkdelivery.co.id/static/website/img/BK_bg.jpg?5218847fa211')] flex flex-col w-full h-screen bg-cover bg-no-repeat">
+      <div className="bg-[url('https://bkdelivery.co.id/static/website/img/BK_bg.jpg?5218847fa211')] flex flex-col w-full  bg-fixed bg-no-repeat">
         <Carousel />
         <div className="p-4">
           <div className="flex bg-white border rounded-lg p-4">
@@ -25,11 +25,6 @@ export default function Home() {
             </button>
           </div>
         </div>
-        {/* <div className="grid grid-cols-2">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
-            <CardBox key={item} />
-          ))}
-        </div> */}
         <CardBox />
       </div>
     </>

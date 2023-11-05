@@ -6,37 +6,75 @@ export default function CardBox({}) {
       imageSrc:
         "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/11/1/bhbpfq8oswcfk7rye5jnof_product_list.jpg",
       alt: "menu",
-      title: "Special Promo &#38; 1-5 Nov&#39;23 &#93;",
+      title: "Special Promo [1-5 Nov'23]",
     },
     {
       imageSrc:
         "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/10/23/hennaxjqiyceh79jnxto4k_product_list.jpg",
       alt: "menu",
-      title: "Mexican x Heinz® Menu &#38; Limited Time Order &#93;",
+      title: "Mexican x Heinz® Menu [Limited Time Order]",
     },
     {
       imageSrc:
         "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/3/16/f8b2q8v78kxbkjxw8cvbbn_product_list.jpg",
       alt: "menu",
-      title: "Special Promo &#38; 1-5 Nov23 &#93;",
+      title: "Cheeseburger Favorite",
+    },
+    {
+      imageSrc:
+        "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/11/2/fwvutetzjew4arsjqzq9td_product_list.jpg",
+      alt: "menu",
+      title: "Cheese Whopper®",
+    },
+    {
+      imageSrc:
+        "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/11/2/ahjlc47bb9hstuc3cc9en2_product_list.jpg",
+      alt: "menu",
+      title: "Cheeseburger Favorite",
+    },
+    {
+      imageSrc:
+        "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/6/3/bzilpvmecz3gmmngfan9vg_product_list.jpg",
+      alt: "menu",
+      title: "King's Chicken [ Rasa Baru ]",
+    },
+    {
+      imageSrc:
+        "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/7/17/7vsqwgbwhohuthx5pb7bfp_product_list.jpg",
+      alt: "menu",
+      title: "3-Cheese [ Limited Time ]",
+    },
+    {
+      imageSrc:
+        "https://media-order.bkdelivery.co.id/thumb/group_photo/2023/3/15/znilxvdnwuyurvfmej3lft_product_list.jpg",
+      alt: "menu",
+      title: "BK APP EXCLUSIVE",
     },
   ]
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-3">
-      {cards.map((card, index) => (
-        <div key={index} className="card shadow-xl rounded-md m-1 bg-white">
-          <div className="card-body">
-            <Image
-              src={card.imageSrc}
-              alt={card.alt}
-              width={200}
-              height={200}
-            />
-            <h2 className="card-title">{card.title}</h2>
+    <div className="pb-10 max-w-4xl mx-auto">
+      <h3 className="text-center text-[#8b542f] text-2xl py-6 font-bold">
+        Our Menus
+      </h3>
+      <div className="grid grid-cols-2 lg:grid-cols-3">
+        {cards.map((card, index) => (
+          <div key={index} className="card shadow-xl rounded-xl m-2 bg-white">
+            <div className="card-body p-0">
+              <Image
+                className="w-full rounded-t-xl"
+                src={card.imageSrc}
+                alt={card.alt}
+                width={600}
+                height={600}
+              />
+              <h2 className="card-title px-4 pt-3 pb-7 text-[#8b542f] font-bold">
+                {card.title}
+              </h2>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   )
 }
