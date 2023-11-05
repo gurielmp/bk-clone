@@ -89,7 +89,7 @@ export default function CardBox({}) {
   ]
 
   return (
-    <div className="pb-10 max-w-4xl mx-auto">
+    <div className="pb-10 max-w-5xl mx-auto">
       <h3 className="text-center text-[#8b542f] text-2xl py-6 font-bold">
         Our Menus
       </h3>
@@ -97,21 +97,21 @@ export default function CardBox({}) {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="card p-2 shadow-xl rounded-xl m-2 bg-white"
+            className="card p-2 lg:p-4 shadow-xl rounded-xl m-2 bg-white"
           >
             <div className="card-body p-0">
               <Image
-                className="w-full rounded-t-xl"
+                className="w-full rounded-t-xl mb-2"
                 src={card.imageSrc}
                 alt={card.alt}
                 width={600}
                 height={600}
               />
-              <div className="grid lg:grid-cols-2 gap-2 px-4 pt-3 pb-7 justify-center text-center lg:justify-normal lg:text-left">
+              <div className="grid lg:grid-cols-2 gap-2 justify-center text-center lg:justify-normal lg:text-left">
                 <h2 className="card-title text-[#8b542f] font-bold">
                   {card.title}
                 </h2>
-                <button className="hidden lg:block btn normal-case font-bold bg-[#ed7801] border-none text-white">
+                <button className="hidden lg:block btn hover:bg-[#ed7801] normal-case font-bold bg-[#ed7801] border-none text-white">
                   Order
                 </button>
               </div>

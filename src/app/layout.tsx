@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NavBar />
-        <main className="flex min-h-screen flex-col items-center">
+        <main className="flex min-h-screen flex-col items-center bg-[url('https://bkdelivery.co.id/static/website/img/BK_bg.jpg?5218847fa211')] bg-fixed bg-no-repeat">
           {children}
         </main>
         <Footer />
