@@ -1,12 +1,13 @@
 import CardBox from "@/components/CardBox"
 import Carousel from "@/components/Carousel"
+import CarouselWithArrow from "@/components/CarouselWithArrow"
 import Image from "next/image"
 
 export default function Home() {
   return (
     <>
       <div className=" flex flex-col w-full">
-        <Carousel />
+        <CarouselWithArrow />
         <div className="p-4 lg:hidden">
           <div className="flex bg-white border rounded-lg p-4">
             <h3 className="flex font-semibold text-black w-4/5">

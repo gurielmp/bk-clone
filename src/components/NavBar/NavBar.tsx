@@ -36,7 +36,7 @@ export default function NavBar() {
         </div>
         <div className="hidden lg:flex">
           <Link
-            href="/menus"
+            href="/news-v1"
             className="btn btn-ghost normal-case -space-y-2  text-left grid"
           >
             <span className="text-[#faaf18] text-xs">Get Fresh</span>
@@ -62,6 +62,14 @@ export default function NavBar() {
               width={40}
               height={40}
             />
+          </Link>
+        </div>
+        <div className="hidden lg:flex">
+          <Link
+            href="/accounts/login"
+            className="p-3 font-bold text-white uppercase text-xl mr-5"
+          >
+            Login
           </Link>
         </div>
         <div className="flex-none">
