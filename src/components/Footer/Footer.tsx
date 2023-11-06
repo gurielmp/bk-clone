@@ -3,24 +3,26 @@ import Image from "next/image"
 export default function Footer() {
   return (
     <div>
-      <footer className="footer p-10 bg-[#2d2d2d] text-base-content footer-center">
-        <h1 className="text-2xl text-white">BURGER KING® DELIVERY</h1>
+      <footer className="footer gap-3 p-10 bg-[#2d2d2d] text-base-content footer-center">
+        <div className="justify-start items-start">
+          <h1 className="text-2xl text-white">BURGER KING® DELIVERY</h1>
+        </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="flex text-3xl text-white font-bold">
             <Image
               src="https://bkdelivery.co.id/static/website/img/Footer-Phone2x.918a358b086f.png"
-              width={30}
-              height={30}
+              width={25}
+              height={10}
               alt="logo"
             />{" "}
             15000 25
           </div>
-          <div className="text-white flex">
+          <div className="text-white flex items-end">
             <Image
               className="mr-2"
               src="https://bkdelivery.co.id/static/website/img/footer-email2x.6866b6e7b141.png"
-              width={30}
-              height={30}
+              width={20}
+              height={20}
               alt="logo"
             />{" "}
             guestservice@burgerking.co.id
@@ -78,16 +80,19 @@ export default function Footer() {
             </a>
           </div>
         </nav>
-        <nav>
-          <header className="footer-title"></header>
-          <a className="link link-hover text-white">About us</a>
-          <a className="link link-hover text-white">Kebujakan Privasi</a>
-          <a className="link link-hover text-white">Syarat dan ketentuan</a>
+        <nav className="lg:flex text-xs text-white m-0 p-0 ">
+          <a className="link link-hover lg:border-r-2 lg:pr-4">About us</a>
+          <a className="link link-hover lg:border-r-2 lg:pr-4">
+            Kebujakan Privasi
+          </a>
+          <a className="link link-hover lg:border-r-2 lg:pr-4">
+            Syarat dan ketentuan
+          </a>
+          <a className="pt-1 text-slate-400">
+            TM & © 2023 Burger King Corporation. Used Under License. All rights
+            reserved.
+          </a>
         </nav>
-        <p>
-          TM & © 2023 Burger King Corporation. Used Under License. All rights
-          reserved.
-        </p>
       </footer>
     </div>
   )
