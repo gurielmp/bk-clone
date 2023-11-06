@@ -46,7 +46,7 @@ export default function NavBar() {
         </div>
         <div className="hidden lg:flex">
           <Link
-            href="/menus"
+            href="/large-order/create"
             className="btn btn-ghost normal-case -space-y-2  grid text-left"
           >
             <span className="text-[#faaf18] text-xs">Exclusive</span>
