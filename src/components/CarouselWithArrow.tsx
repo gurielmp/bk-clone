@@ -36,7 +36,7 @@ export default function CarouselWithArrow() {
   ]
 
   return (
-    <div className="carousel w-full">
+    <div className="carousel w-full max-h-[450px]">
       {slides.map((slide) => (
         <div
           key={slide.id}
