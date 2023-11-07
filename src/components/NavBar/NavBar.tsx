@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import ShoppingCartButton from "./ShoppingCartButton"
 export default function NavBar() {
   return (
     <div className="bg-[#2a2929]">
@@ -72,16 +73,7 @@ export default function NavBar() {
             Login
           </Link>
         </div>
-        <div className="flex-none">
-          <a className="p-3 bg-[#ed7801]">
-            <Image
-              src="https://bkdelivery.co.id/static/website/img/BK_TopCart2x.ab793c4833a3.png"
-              alt="logo"
-              width={30}
-              height={30}
-            />
-          </a>
-        </div>
+        <ShoppingCartButton />
       </div>
     </div>
   )
